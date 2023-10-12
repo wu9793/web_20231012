@@ -23,12 +23,22 @@
         } */
 
 
-        .div2>.p21{
+        .div2>.p21 {
             color: aqua;
         }
 
-        .box1 > div > p{
+        .box1>div>p {
             color: lightblue;
+        }
+
+        /* 空格全部影響 */
+        .divA div {
+            color: blue;
+        }
+
+        /* >只影響下一層 */
+        .divA>div {
+            color: red;
         }
     </style>
 </head>
@@ -41,66 +51,94 @@
         <p class="p1">Lorem, ipsum dolor.</p>
         <p class="p2">Lorem, ipsum dolor.</p>
         <p class="p3">Lorem, ipsum dolor.</p>
-    
-     <br><hr><br>
 
-     <h3>></h3>
-     <h4>下一層</h4>
-     <div class="div2">
-        div2
-        <p class="p21">
-            Lorem ipsum dolor sit amet.
-        </p>
-        <p class="p21">
-            Lorem ipsum dolor sit amet.
-        </p>
-        <p class="p21">
-            Lorem ipsum dolor sit amet.
+        <br>
+        <hr><br>
+
+        <h3>></h3>
+        <h4>下一層</h4>
+        <div class="div2">
+            div2
+            <p class="p21">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="p21">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="p21">
+                Lorem ipsum dolor sit amet.
             <div class="div">
                 Lorem ipsum dolor sit amet.
             </div>
-        </p>
-        <p class="p21">
-            Lorem ipsum dolor sit amet.
-        </p>
-     </div>
+            </p>
+            <p class="p21">
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
 
-     <br><hr><br>
+        <br>
+        <hr><br>
 
-     <div class="container box1">
-        <p>
-            Lorem ipsum dolor sit amet.
-        </p>
-        <div>
+        <div class="container box1">
             <p>
                 Lorem ipsum dolor sit amet.
             </p>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
         </div>
-     </div>
-     <div class="container box2">
-        <p>
-            Lorem ipsum dolor sit amet.
-        </p>
-        <div>
+        <div class="container box2">
             <p>
                 Lorem ipsum dolor sit amet.
             </p>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
         </div>
-     </div>
-     <div class="container box3">
-        <p>
-            Lorem ipsum dolor sit amet.
-        </p>
-        <div>
+        <div class="container box3">
             <p>
                 Lorem ipsum dolor sit amet.
             </p>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+
+
         </div>
-     </div>
-    
+        <br>
+        <hr><br>
+
+        <h3>空格 如果可以，少用</h3>
+        <div class="divA">
+            &nbsp;&nbsp;divA
+            <div class="divA1">
+                &nbsp;&nbsp;&nbsp;dinA1
+                <div class="divA11">
+                    &nbsp;&nbsp;&nbsp;&nbsp;divA11
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+
+            &nbsp;&nbsp;divA
+            <div class="divA1">
+                &nbsp;&nbsp;&nbsp;dinA1
+                <div class="divA11">
+                    &nbsp;&nbsp;&nbsp;&nbsp;divA11
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
-   
+
 
 
 </body>
