@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[test="s123"]{
+            color: aquamarine;
+        }
+
+        input[type="text"]{
+            background-color: brown;
+        }
+
+        p[class^="iphone14"]{
+            background-color: green;
+        }
+
+        p[class^="iphone15"]{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" test="55688">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="box" test="s123">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+
+    <br><hr><br>
+<div class="container">
+    <form action="" method="get">
+        <p>
+            <label for=""></label>
+            <input type="text">
+        </p>
+        <p>
+            <label for=""></label>
+            <input type="text">
+        </p>
+        <p>
+            <label for=""></label>
+            <input type="text">
+        </p>
+        <p>
+            <label for=""></label>
+            <input type="text">
+        </p>
+    </form>
+</div>
+
+<br><hr><br>
+
+<div class="container">
+    <p class="iphone14 text-red">Lorem, ipsum dolor.</p>
+    <p class="iphone14 text-red">Lorem, ipsum dolor.</p>
+
+    <p class="iphone15 text-red">Lorem, ipsum dolor.</p>
+    <p class="iphone15 text-red">Lorem, ipsum dolor.</p>
+
+</div>
+    
+</body>
+</html>
