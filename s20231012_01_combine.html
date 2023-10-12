@@ -40,6 +40,16 @@
         .divA>div {
             color: red;
         }
+
+        /*  只會影響next兄弟姊妹 一個 */
+        .silbling+p {
+            color: aqua;
+        }
+
+        /*  只會影響next兄弟姊妹 全部 */
+        .silbling~p {
+            color: red;
+        }
     </style>
 </head>
 
@@ -135,8 +145,28 @@
                 </div>
             </div>
         </div>
+
+        <br>
+        <hr><br>
+
+        <h3>+ 兄弟</h3>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <div class="silbling">
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+            <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
+        <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet.</p>
     </div>
-    </div>
+
 
 
 
